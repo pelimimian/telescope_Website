@@ -1,0 +1,186 @@
+body {
+    background-color: #fefdff; /*Splashed White*/
+  }
+  
+  /*This keeps the header fixed on top while scrolling down*/
+  #header {
+    background-color: white;
+    position: fixed;
+    top: 0; /* Keep at the very top of the viewport */
+    display: flex;
+    width: 100%;
+    border: solid;
+    border-width: 0 0 thin 0;
+    border-color: #ede8e9; /*Light Gray*/
+  }
+  
+  #header-img {
+    width: 2em;
+    height: 2em;
+  }
+  #title {
+    text-align: left;
+    font-size: 2em;
+  }
+  
+  /*Used flex to have the telescope and title to be on the same row*/
+  #logo_container {
+    background-color: white;
+    width: 100%;
+    display: flex;
+  }
+  /*This is here to prevent wrapping of the buttons and to keep the navigaton bar perfectly horizontal*/
+  #navigation_bar_container {
+    display: flex;
+    width: 100%;
+  }
+  #nav-bar {
+    width: 95%; /*So the buttons aren't not tought the scroll bar*/
+    text-align: right;
+  }
+  /*Button can be used here too*/
+  .nav-link {
+    background-color: white;
+  }
+  a {
+    /*Removes the underline*/
+    text-decoration: none;
+    color: black;
+    font-family: "Lato", sans-serif;
+  }
+  a:hover {
+    background-color: #b6d3ff; /*Pale Cornflower Blue*/
+  }
+  a:focus {
+    outline: 0;
+  }
+  .btn {
+    border: none;
+    padding: 1%;
+    background: none;
+    font-size: 140%;
+    cursor: pointer;
+    outline: none;
+  }
+  a.buttons {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #b6d3ff; /*Pale Cornflower Blue*/
+    color: black;
+    font-size: 2em;
+    border: solid;
+    border-size: 1px 1px 1px 1px;
+    padding: 1%;
+    border-color: #ede8e9; /*Light Gray*/
+  }
+  a.buttons:hover {
+    color: blue;
+  }
+  
+  /*Changing the size of the text for smartphones*/
+  @media (max-width: 380px) {
+    #title {
+      font-size: 1.5em;
+    }
+    .btn {
+      font-size: 2em;
+    }
+    #header-img {
+      width: 3em;
+      height: 3em;
+    }
+    #logo_container {
+      background-color: white;
+      width: 100%; /*Distance between containers*/
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #navigation_bar_container {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
+  }
+  p {
+    font-size: 2em;
+  }
+  #Telescope_Title {
+    text-align: center;
+  }
+  #Selling_Pitch_Container {
+    text-align: center;
+    list-style-position: inside;/*Moving bullets toward the center*/
+    background-color: #ebfafa; /*Alice Blue*/
+    border-style: solid;
+    border-width: 150px 50px;
+    border-color: #fefdff; /*Splashed White*/
+  }
+  
+  #Telescope_Products_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.6em;
+    text-align: center;
+  }
+  
+  .Telescope_Picture_Format {
+    border: solid;
+    border-width: 0.2em;
+    border-color: #ede8e9; /*Light Gray*/
+    height: 30em;
+    width: 30em;
+  }
+  #Video_Title {
+    text-align: center;
+  }
+  #Video_Description {
+    font: italic 15px arial;
+  }
+  #Video_Container {
+    padding-top: 10%;
+    text-align: center;
+  }
+  #video {
+    width: 40em;
+    height: 25em;
+  }
+  /*600px is the width of my phnone, approixately*/
+  @media (max-width: 500px) {
+    #video {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  #form {
+    text-align: center;
+  }
+  #Contacts_Title {
+    text-align: center;
+  }
+  #Contacts_Description {
+    font: italic 15px arial;
+  }
+  #textArea_container {
+    padding-top: 1%;
+  }
+  #comments_textArea {
+    /*There is a function called calc in which can caluclate px for you. In this case it takes 100%  width and substracts it by 45px*/
+    width: calc(60% - 45px);
+    height: 100px;
+    resize: none;
+  }
+  #Email_Container {
+    padding-top: 10%;
+  }
+  #email {
+    font-size: 1em;
+  }
+  #submit {
+    font-size: 1em;
+  }
+  #signature {
+    text-align: center;
+    font-color: red;
+  }
+  
